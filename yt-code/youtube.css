@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scrollbar-color: transparent #0F0F0F;
+}
+:root {
+  /* COLOR */
+  --HEADER-BGCOLOR: #000;
+  --ICON-BG: #222222;
+  --FONT-COLOR: #fff;
+
+  /* BORDER */
+  --SEARCH-BORDER: 1px solid rgb(110, 110, 110);
+  --SEARCH-ACTIVE-BORDER: 1px solid rgb(47, 47, 255);
+}
+/* header nav bar */
+.header-div {
+  height: 60px;
+  background-color: var(--HEADER-BGCOLOR);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.header-left-logo {
+  height: 56px;
+  width: 169px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.left-logo-three-line{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border-radius: 20px;
+}
+.left-logo-three-line:hover{
+  background-color: var(--ICON-BG);
+}
+.header-middle-part {
+  width: 700px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.header-search-input {
+  height: 40px;
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+}
+.hd-search-message {
+  height: 40px;
+  width: 536px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 0 0 20px;
+  border: var(--SEARCH-BORDER);
+}
+.hd-search-message:active {
+  border: var(--SEARCH-ACTIVE-BORDER);
+}
+.search-input {
+  height: 26px;
+  width: 515.6px;
+  color: #fff;
+  background-color: var(--HEADER-BGCOLOR);
+  border: none;
+}
+.search-input:focus {
+  outline: none;
+}
+
+.search-input::placeholder {
+  font-size: 1.1rem;
+  color: #dcdcdc;
+}
+.hd-search-icon {
+  height: 40px;
+  width: 64px;
+  border-radius: 0 20px 20px 0;
+  background-color: var(--ICON-BG);
+  border: var(--SEARCH-BORDER);
+  border-left: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hd-mic-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--ICON-BG);
+}
+.hd-mic-icon:hover{
+  background-color: #3e3e3e;
+}
+.header-right-part {
+  height: 40px;
+  width: 225px;
+}
+.hd-rigth-items {
+  height: 40px;
+  width: 156px;
+  display: flex;
+  justify-content: space-around;
+}
+.hd-right-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--HEADER-BGCOLOR);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hd-right-icon:hover {
+  background-color: var(--ICON-BG);
+}
+.hd-right-profile {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  display: block;
+}
+/* SECTION LEFT SIDE  */
+.section-left-mainDiv {
+  padding: 10px 15px;
+  position: fixed;
+  min-height: 100vh;
+  width: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--HEADER-BGCOLOR);
+  z-index: 1;
+}
+.section-left-MD-child {
+  height: 100vh;
+  width: 216px;
+  color: var(--FONT-COLOR);
+}
+#left-MD-child-home-element{
+  height:40px;
+  width: 204px;
+  border-radius: 15px;
+  background-color: var(--ICON-BG);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+}
+.left-MD-child-elements{
+  height:40px;
+  width: 204px;
+  border-radius: 15px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+}
+.left-MD-child-elements:hover{
+  background-color: var(--ICON-BG);
+}
+
+.left-section-img{
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-section-img-word{
+  height: 20px;
+  width: 132px;
+  font-size: 0.9rem;
+}
+
+/* your profile and your channel info YOU  */
+.left-second-part-you{
+  margin-top: 13px;
+  border-top:var(--SEARCH-BORDER);
+}
+#you-section{
+  padding-top: 10px;
+  height:40px;
+  width: 204px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap:4px;
+  padding-left: 15px;
+}
+#you-section:hover{
+  background-color: var(--ICON-BG);
+}
+#you{
+  width: 35px;
+  height: 22px;
+  font-weight: 500;
+}
+/* HEADINGS LIKE SUBSCRIPTION EXPLORE */
+.left-headings{
+  margin-top: 13px;
+  border-top:var(--SEARCH-BORDER);
+}
+.heading-letter{
+  padding: 10px 20px;
+  height: 32px;
+  width: 216px;
+  font-weight: 500;
+}
