@@ -262,7 +262,16 @@ header, .header-nav {
   font-weight: 500;
 }
 
-/* feed content  */
+/* feed content at top like all ,gaming ... */
+:root{
+  /* color */
+  --FEED-FILTER-BG:#333;
+  --FEED-FILTER-COLOR:#FFF;
+}
+.feed-filter{
+  width: 100%;
+  position: fixed;
+}
 .feed-filter-MD {
   height: 56px;
   background-color: var(--HEADER-BGCOLOR);
@@ -276,40 +285,53 @@ header, .header-nav {
 
   scrollbar-color: var(--HEADER-BGCOLOR);
 }
+
 .feed-filter-div {
   height: 32px;
   width: 40px;
   border-radius: 10px;
+  background-color: var(--FEED-FILTER-BG);
+  color: var(--FEED-FILTER-COLOR);
   border: var(--SEARCH-BORDER);
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   margin: 12px 12px 12px 0;
+}
+.all{
+  background-color: whitesmoke;
+  color: #000;
 }
 .item-name {
   height: 20px;
 }
 /* feef content */
+.feed-main{
+  margin-top: 50px;
+  overflow: hidden;
+  overflow-y: auto;
+}
 .feed-container {
   padding-left: 245px;
   padding-top: 5px;
   color: var(--FONT-COLOR);
   background-color: var(--HEADER-BGCOLOR);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 20px;
+  grid-template-columns: repeat(auto-fit,minmax(322px,1fr));
+  column-gap: 10px;
+ gap:10px;
 }
 .thumnail-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 405px;
-  height: 340px;
+  /* width: 405px;
+  height: 340px; */
 }
-.thumbnail {
+/* .thumbnail {
   height: 230px;
   width: 405px;
-}
+} */
 .thumbnail-img {
   height: 230px;
   width: 405px;
@@ -322,7 +344,7 @@ header, .header-nav {
 }
 .video-title {
   height: 100px;
-  width: 405px;
+  /* width: 405px; */
   
   display: flex;
   gap: 20px;
@@ -333,6 +355,6 @@ header, .header-nav {
 .heading-tick {
   margin-top: 5px;
   height: 17px;
-  width: 301px;
+  /* width: 301px; */
   display: flex;
 }
