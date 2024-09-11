@@ -265,7 +265,8 @@ header, .header-nav {
 /* feed content at top like all ,gaming ... */
 :root{
   /* color */
-  --FEED-FILTER-BG:#333;
+  --FEED-FILTER-BG:#222222;
+  --FEED-FILTER-HOVER-C:#3e3e3e;
   --FEED-FILTER-COLOR:#FFF;
 }
 .feed-filter{
@@ -274,6 +275,7 @@ header, .header-nav {
 }
 .feed-filter-MD {
   height: 56px;
+ 
   background-color: var(--HEADER-BGCOLOR);
   z-index: 1;
   padding-left: 250px;
@@ -281,26 +283,36 @@ header, .header-nav {
   overflow: hidden;
   overflow-x: auto;
   gap: 2px;
-  scrollbar-width: thin;
-
+ scrollbar-color: black;
+ 
   scrollbar-color: var(--HEADER-BGCOLOR);
 }
 
 .feed-filter-div {
   height: 32px;
-  width: 40px;
+  /* width: 40px; */
   border-radius: 10px;
   background-color: var(--FEED-FILTER-BG);
   color: var(--FEED-FILTER-COLOR);
-  border: var(--SEARCH-BORDER);
+ 
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin: 12px 12px 12px 0;
+  padding: 0 12px 0 12px;
+}
+.feed-filter-div:hover{
+  background-color: var(--FEED-FILTER-HOVER-C);
+}
+.feed-filter-MD{
+  display: flex;
 }
 .all{
   background-color: whitesmoke;
   color: #000;
+}
+.all:hover{ 
+  background-color: whitesmoke;
 }
 .item-name {
   height: 20px;
@@ -358,3 +370,36 @@ header, .header-nav {
   /* width: 301px; */
   display: flex;
 }
+/* footer{
+  display: none;
+}
+ @media screen and (max-width:850px) {
+  body{
+    max-height: 1194px;
+  }
+  #left-section{
+    display: none;
+  }
+  footer, .footer-contain{
+    height: 30px;
+    width: 100%;
+    background-color: red;
+    z-index: 1000;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    padding-left: 18%;
+    /* justify-content: center; */
+  }
+  
+  /* media quire */
+  .footer-contain{
+    
+    background-color: black;
+    height: 30px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}  */
